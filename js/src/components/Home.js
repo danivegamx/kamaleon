@@ -70,27 +70,6 @@ var App = React.createClass({
 				</footer>
 			</div>
 		);
-	},
-
-	/*
-	*	TODO Search a location from an address;
-	*	Method to call the GMap service to search the
-	*	coordinates from a given address.
-	*	@param address
-	*/
-	searchForAddress(address) {
-		AppActions.searchAddress(address);
-	},
-
-	toggleFavorite(address) {
-		FavoritesStore.checkifFavorites(address)
-		if(FavoritesStore.getIfItsOnFavorites()) // If address is on favorites, remove it.
-			AppActions.removeFromFavorites(address)
-		else // If address is NOT on favorites, add it.
-			AppActions.addToFavorites(address)
-	},
-	_onChange(){
-		this.setState(getMapState());
 	}
 });
 
