@@ -2,7 +2,8 @@
 
 Kamaleon fw for EPAM SEC 2016 official repo
 
-Author: Daniel Vega
+Author: Daniel Vega, Mexico Front-End Competency Lead
+EPAM Systems MX
 
 Kamaleon it's a Front-End library built in React.js that includes a fuzzy logic system for data comparison and DOM modification to improve user experience (UX) on WebApps.
 
@@ -19,7 +20,7 @@ Technologies implemented:
 * Node.js - JS Engine
 * Stylus - CSS Preprocessor
 * Bundled Fuzzy Logic
-* jQuery - khe? :v
+* jQuery - whut? :v
 * Connect - HTTP Server
 
 ### Installation
