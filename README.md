@@ -1,19 +1,19 @@
 # Kamaleon.js
 
-Kamaleon framework #CPMX7 official repo
+Kamaleon fw for EPAM SEC 2016 official repo
 
 Author: Daniel Vega
 
-Kamaleon es un framework de Front-End desarrollado en React.js que incluye un sistema de lógica difusa (fuzzy logic) para la clasificación de datos y modificación del DOM para mejorar la experiencia de usuario en WebApps.
+Kamaleon it's a Front-End library built in React.js that includes a fuzzy logic system for data comparison and DOM modification to improve user experience (UX) on WebApps.
 
-Desarrollada en el corazón de Campus Party México 2016, con amor para el mundo.
+Developed at Campus Party Mexico 2016's heart and improved for EPAM's Software Engineering Conference 2016 @ Minsk, Belarus.
 
 ### Version
-1.0.0
+2.0.0
 
 ### Stack
 
-Éstas son las tecnologías implementadas:
+Technologies implemented:
 
 * React.js - UI Library
 * Node.js - JS Engine
@@ -24,7 +24,7 @@ Desarrollada en el corazón de Campus Party México 2016, con amor para el mundo
 
 ### Installation
 
-Kamaleon requiere [Node.js](https://nodejs.org/) v4+.
+Kamaleon requies [Node.js](https://nodejs.org/) v4+.
 
 ```sh
 $ git clone git@github.com:danivegamx/kamaleon.git
@@ -34,7 +34,7 @@ $ npm install
 
 ### Servidor
 
-El servidor correrá como *localhost* en el puerto 8080. Para modificarlo, ingresarlo en el archivo **server.js**.
+Server *localhost* will run at 8080. you can modify it, by changing the port on the file: **server.js**.
 
 ```sh
 $ node server.js
@@ -42,27 +42,27 @@ $ node server.js
 
 ### Watch
 
-En desarrollo, usar el comando *watch* para compilar el código de React.js a JS interpretable por los navegadores:
+In developmentt, use *watch* command to compile JSX to standard JS:
 
 ```sh
 $ npm run watch
 ```
 
-### Producción
+### Build
 
-Para optimizar el código, usar el comando *build* para obtener un .js minificado:
+For code optimization, use *build* commando to minify all the bundle:
 
 ```sh
 $ npm run build
 ```
 
-### ¡Contribuye!
+### Let's contribute!
 
-Ayuda a que la iniciativa crezca con propuestas y desarrollo en este repositorio.
+Help this initiative. Bring up with some ideas and development to build a great solution.
 
-Licencia
+Licence
 ----
 
 MIT
 
-**#CPMX7 #WorkshopEPAMIAUX**
+**EPAM SEC FALL 2016 #PracticalAITechniquesForUXImprovement**
