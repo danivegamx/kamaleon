@@ -8,7 +8,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "watchify -v -d -t [ reactify --es6 ] js/src/index.js -o js/build/build.js",
-    "build": "browserify -t [ reactify --es6 ] js/src/index.js | uglifyjs > js/build/build.js"
+    "build": "browserify -t [ reactify --es6 ] js/src/index.js | uglifyjs > js/build/build.js",
+    "stylus" : "stylus -u nib -c -w -o css/master.css stylus/master.styl"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,8 @@
   },
   "devDependencies": {
     "browserify": "^13.0.1",
+    "nib": "^1.1.0",
+    "stylus": "^0.54.5",
     "connect": "*",
     "react-dom": "^15.1.0",
     "reactify": "^1.1.1",

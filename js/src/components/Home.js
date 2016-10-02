@@ -3,7 +3,6 @@ var React = require('react');
 /* Main Component */
 var App = React.createClass({
 
-	
 	getInitialState() {
 		return {
 			lat : "",
@@ -19,26 +18,27 @@ var App = React.createClass({
     		base_url = "http://api.openweathermap.org/data/2.5/weather", // URL of Open Weather.
     		query, // Query for latitud & longitud.
     		lat, lon; // Coordinates.
-
+		/*
 		geo.getCurrentPosition(function(position) {
     		lat = position.coords.latitude;
         	lon = position.coords.longitude;
 
         	self.setState({ lat:lat, lon:lon });
 
-		    query = "lat=" + lat + "&lon=" + lon + "&units=metric&APPID=721fed692072cb97940bf8ad128baaec";
+		    query = "lat=53.9045&lon=27.5615&units=metric&APPID=721fed692072cb97940bf8ad128baaec";
 
-		    /*$.getJSON(base_url+"?"+query, function(weather) {
+		    $.getJSON(base_url+"?"+query, function(weather) {
 		        self.setState({temp:weather.main.temp})
 		        fuzzySet = [weather.main.temp];
 		        Kamaleon.fuzzy(fuzzySet);
-		    });*/
-
-			self.setState({temp:90});
-			fuzzySet = [90];
-			Kamaleon.fuzzy(fuzzySet);
+		    });
 		});
+		*/
 
+		self.setState({ lat:53.9045, lon:27.5615 });
+		self.setState({temp:18.54});
+		fuzzySet = [this.state.temp];
+		Kamaleon.fuzzy(fuzzySet);
 	},
 
 	/*
@@ -49,24 +49,52 @@ var App = React.createClass({
 	render() {
 		return (
 			<div>
-				<div id="div3">
-				    <span id="data_wrapper">
-				      <span id="city">{this.state.lat}</span>,&nbsp;
-				      <span id="state">{this.state.lon}</span>
-				      <span id="weather">{this.state.temp}</span>
-				    </span>
-				    <img src="images/bg.png" />
-				</div>
-				<div id="div1">
-					<h1 id="titlek">Kamaleon</h1>
-				</div>
-				<div id="div2">
-				    Kamaleon es un framework de Front-End para mejorar la experiencia de usuario (UX) basado en Temperatura y hora del día; Desarrollado para WebApps con un sistema de Lógica Difusa (Fuzzy Logic) y React.js.
-				    
-				    <p>#FeelTheFuture</p>
+				<div className="row">
+					<div id="div3">
+					    <span id="data_wrapper">
+					      <span id="city">{this.state.lat}</span>,&nbsp;
+					      <span id="state">{this.state.lon}</span>
+					      <span id="weather">{this.state.temp}</span>
+					    </span>
+					    <img src="images/bg.png" />
+					</div>
+					<div id="div1">
+						<h1 id="titlek">Kamaleon</h1>
+					</div>
+					<div className="row">
+						<div className="medium-4 columns">
+							<div className="div2 lateral">
+								<img src="images/sec.png" />
+							</div>
+						</div>
+						<div className="medium-8 columns">
+							<div className="div2">
+								Kamaleon it's a Front-End library built in React.js that includes a fuzzy logic system for data comparison and DOM modification to improve user experience (UX) on WebApps.
+								<br></br>
+								<p>Improved for EPAM's Software Engineering Conference 2016 @ Minsk, Belarus.</p>
+							</div>
+							<div className="row">
+								<div className="medium-6 columns">
+									<div className="div2">
+										SLIDES:<br></br>
+										https://www.slid.es/danivegamx/sec2016
+									</div>
+								</div>
+								<div className="medium-6 columns">
+									<div className="div2">
+										REPOSITORY:<br></br>
+									https://www.github.com/danivegamx/kamaleon
+									</div>
+								</div>
+							</div>
+							<div className="div2">
+								@ Minsk, Belarus.
+							</div>
+						</div>
+					</div>
 				</div>
 				<footer>
-				    Campus Party 2016 #CPMX7
+				    EPAM SEC FALL 2016
 				</footer>
 			</div>
 		);
